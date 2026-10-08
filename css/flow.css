@@ -1,0 +1,131 @@
+/* ===== 入社までの流れ 01〜06 =====
+   手順は「番号の列＋1本の縦線（順番の関係を示す線）」で見せる。
+   サポートの説明は角丸の囲みをやめ、薄い面に置く */
+
+.flow{
+  padding: 96px var(--pad) 96px;
+}
+
+.flow-lead{
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--ink-2);
+}
+
+.flow-title{
+  margin-top: 6px;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.flow-intro{
+  margin-top: 28px;
+  font-size: 30px;
+  line-height: 1.75;
+}
+
+.flow-steps{
+  margin-top: 64px;
+}
+
+.flow-step{
+  position: relative;
+  display: grid;
+  grid-template-columns: 136px 1fr;
+  padding-bottom: 64px;
+}
+
+.flow-step:last-child{
+  padding-bottom: 0;
+}
+
+/* 番号と番号をつなぐ縦線（最後の手順には引かない） */
+.flow-step:not(:last-child)::before{
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 96px;
+  bottom: 12px;
+  width: 4px;
+  background: #c3cedb;
+}
+
+.flow-num{
+  font-size: 80px;
+  line-height: 1;
+  color: var(--gold-ink);
+}
+
+.flow-h3{
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.flow-text{
+  margin-top: 14px;
+  font-size: 30px;
+  line-height: 1.75;
+}
+
+.flow-sub{
+  margin-top: 4px;
+  font-size: 26px;
+  color: var(--ink-2);
+}
+
+.flow-sup{
+  margin-top: 24px;
+  padding: 28px 32px 30px;
+  background: var(--mist);
+}
+
+.flow-suphead{
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.flow-suptext{
+  margin-top: 8px;
+  font-size: 28px;
+  line-height: 1.75;
+}
+
+/* 01 の中の応募ボタン（応募の色の面） */
+.flow-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+  height: 112px;
+  padding: 0 40px 0 44px;
+  border-radius: 10px;
+  background: var(--action);
+  color: #fff;
+}
+
+.flow-btn-text{
+  font-size: 34px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.flow-btn-arrow{
+  width: 20px;
+  height: 34px;
+  flex: none;
+}
+
+.flow-note{
+  margin-top: 16px;
+  font-size: 26px;
+  color: var(--ink-2);
+}
+
+/* 押せる文字だけ下線（飾りではなくリンクの印） */
+.flow-link{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

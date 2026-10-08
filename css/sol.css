@@ -1,0 +1,145 @@
+/* ===== その悩み、解決できます＋1年後の、あなたへ =====
+   悩み（暗い面）→ 答え（白い面）の明暗で「解決」を見せる。フチ文字・囲み線は使わない */
+
+.sol{
+  padding: 64px var(--pad) 96px;
+}
+
+.sol-title{
+  display: flex;
+  flex-direction: column;
+  font-size: 76px;
+  font-weight: 900;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.sol-pairs{
+  margin-top: 56px;
+}
+
+.sol-pair{
+  display: grid;
+  grid-template-columns: 330px 64px 1fr;
+  align-items: stretch;
+  min-height: 176px;
+}
+
+.sol-pair + .sol-pair{
+  margin-top: 12px;
+}
+
+.sol-worry{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+  background: var(--navy-2);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.sol-arrow{
+  align-self: center;
+  justify-self: center;
+  width: 30px;
+  height: 36px;
+}
+
+.sol-answer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 32px;
+  background: var(--paper);
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.sol-a-small{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.sol-a-big{
+  display: flex;
+  align-items: baseline;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.sol-zero{
+  margin: 0 4px 0 10px;
+  font-size: 96px;
+  line-height: 1;
+  color: var(--gold-ink);
+}
+
+.sol-a-line{
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1.15;
+}
+
+.sol-a-label{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.sol-a-num{
+  font-size: 64px;
+  color: var(--gold-ink);
+}
+
+.sol-a-unit{
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--gold-ink);
+}
+
+.sol-answer-text{
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.sol-future{
+  margin-top: 96px;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.sol-photo{
+  margin-top: 36px;
+  width: 912px;
+  height: 386px;
+  object-fit: cover;
+}
+
+.sol-points{
+  margin-top: 48px;
+}
+
+.sol-point + .sol-point{
+  margin-top: 40px;
+}
+
+.sol-point-title{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.sol-point-text{
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 1.7;
+  color: #dfe6f0;
+}

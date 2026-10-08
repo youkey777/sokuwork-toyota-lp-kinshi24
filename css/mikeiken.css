@@ -1,0 +1,47 @@
+/* ===== Q.未経験でも大丈夫？＋研修＋業務内容 ===== */
+
+/* 「Q.」の見出しは薄い面に置く（ryo と同じ扱い） */
+.mikeiken-q{
+  padding: 64px var(--pad) 56px;
+  background: var(--mist);
+  color: var(--ink);
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.mikeiken-lead{
+  padding: 56px var(--pad) 48px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.mikeiken-photo{
+  width: 1024px;
+}
+
+.mikeiken-work{
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.mikeiken-h2{
+  padding: 0 var(--pad) 36px;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.mikeiken-press{
+  padding: 40px var(--pad) 0;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.mikeiken-body{
+  padding: 14px var(--pad) 0;
+  font-size: 32px;
+  line-height: 1.75;
+}

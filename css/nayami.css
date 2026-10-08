@@ -1,0 +1,60 @@
+/* ===== こんな悩み、ありませんか？ =====
+   吹き出し（角丸・フチ）をやめ、写真と同じ高さの白い面に悩みの言葉を置く */
+
+.nayami{
+  padding: 88px var(--pad) 40px;
+}
+
+.nayami-title{
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.nayami-list{
+  margin-top: 48px;
+}
+
+.nayami-item{
+  display: grid;
+  grid-template-columns: 429px 1fr;
+  height: 240px;
+}
+
+.nayami-item + .nayami-item{
+  margin-top: 8px;
+}
+
+.nayami-photo{
+  width: 429px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.nayami-voice{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.nayami-body{
+  margin-top: 56px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #dfe6f0;
+}
+
+.nayami-catch{
+  margin-top: 28px;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.3;
+}

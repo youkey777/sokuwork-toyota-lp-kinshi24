@@ -1,0 +1,45 @@
+/* ===== 正社員登用制度について ===== */
+
+.toyo{
+  padding: 88px var(--pad) 96px;
+  background: var(--mist);
+}
+
+.toyo-title{
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.toyo-grid{
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 44px;
+  margin-top: 44px;
+}
+
+.toyo-photo{
+  width: 420px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.toyo-text p{
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.toyo-text p + p{
+  margin-top: 24px;
+}
+
+.toyo-gold{
+  font-weight: 900;
+  color: var(--gold-ink);
+}
+
+.toyo-gold .num{
+  font-size: 52px;
+  line-height: 1;
+}

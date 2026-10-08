@@ -1,0 +1,101 @@
+/* ===== 禁止24版の土台 =====
+   原則: 影・光彩・フチ文字・グラデ・文字の伸縮/傾きは使わない。
+   区別は「色面（紺・白・薄い灰青）」「文字の大きさと太さ」「余白」でつける。
+   キャンバスは見本と同じ幅1024の1カラム。狭い画面では lp.js が全体を等倍率で縮める（縦横比は変えない）。 */
+
+:root{
+  --navy: #0a2341;        /* 紺の地（先輩写真の地色と同じ） */
+  --navy-2: #143559;      /* 紺地の上の一段明るい面 */
+  --ink: #0b2447;         /* 白地の上の文字 */
+  --ink-2: #44566f;       /* 白地の上の補足文字 */
+  --paper: #fcfcfc;       /* 白の地 */
+  --mist: #eaeff5;        /* 白地の上の面 */
+  --gold: #fcbc08;        /* 紺地の上の金額 */
+  --gold-ink: #a06c00;    /* 白地の上の金額（白との明暗差 4:1 以上） */
+  --pale: #c9d5e5;        /* 紺地の上の補足文字 */
+  --action: #e65400;      /* 応募の操作だけに使う色 */
+  --pad: 56px;            /* 左右の余白 */
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background: #dfe5ec;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--ink);
+  line-height: 1.6;
+  font-feature-settings: "palt" 1;
+}
+
+.lp{
+  width: 1024px;
+  margin: 0 auto;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+section[data-unit]{
+  width: 1024px;
+}
+
+img{
+  display: block;
+  max-width: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+button,
+input,
+select{
+  font: inherit;
+  color: inherit;
+}
+
+ul,
+ol{
+  list-style: none;
+}
+
+/* 文の折り返しは文節で（単語の途中で切らない） */
+p, h1, h2, h3, h4, li, dd, dt, td, th, summary, strong, label{
+  word-break: auto-phrase;
+}
+
+/* 飾りの記号（＼ ／）を見た目から外す。文言は元のまま残す */
+.vh{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* 数字の書体 */
+.num{
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* 紺の地の区画 */
+.on-navy{
+  background: var(--navy);
+  color: #fff;
+}

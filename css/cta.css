@@ -1,0 +1,48 @@
+/* ===== 応募ボタンのかたまり（cta_A〜cta_H 共通）=====
+   見本の「＼ ／」の斜線・グラデの塗り・縁取り・影は外し、一色の面と文字の大きさで押せる場所を示す */
+
+.cta{
+  padding: 64px var(--pad) 72px;
+}
+
+/* 誘導文（短い一文なので左揃えでボタンの左端にそろえる） */
+.cta-lead{
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #fff;
+}
+
+/* ボタン本体: 応募の色の一枚の面。角は少しだけ丸める */
+.cta-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+  height: 136px;
+  padding: 0 52px 0 56px;
+  border-radius: 10px;
+  background: var(--action);
+  color: #fff;
+}
+
+.cta-btn-text{
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.cta-btn-arrow{
+  width: 24px;
+  height: 40px;
+  flex: none;
+}
+
+.cta-note{
+  margin-top: 22px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--pale);
+}
