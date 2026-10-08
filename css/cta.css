@@ -46,3 +46,17 @@
   line-height: 1.4;
   color: var(--pale);
 }
+
+/* ヒーロー直後の応募ボタンは、最初の1画面に収めるため上の余白を詰める */
+section[data-unit="cta_A"]{
+  padding-top: 16px;
+}
+
+section[data-unit="cta_A"] .cta-lead{
+  font-size: 38px;
+}
+
+section[data-unit="cta_A"] .cta-btn{
+  margin-top: 12px;
+  height: 116px;
+}
